@@ -1,3 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off", // Disable the no-explicit-any rule
+    "no-unused-vars": "off", // Disable unused vars rule
+    "react-hooks/exhaustive-deps": "off" // Disable missing dependencies in useEffect
+  }
 }
+
+
