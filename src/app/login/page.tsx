@@ -23,7 +23,7 @@ export default function LoginPage() {
         } catch (error: any) {
 
         if(error.response){
-            let err = error.response.data.error
+            const err = error.response.data.error
             console.log("failed", error.response.data.error); 
             toast.error(err)
             return
