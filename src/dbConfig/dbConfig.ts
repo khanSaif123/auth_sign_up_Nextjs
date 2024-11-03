@@ -16,9 +16,7 @@ export async function connect() {
   }
 
   try {
-    await mongoose.connect(MONGO_URL, {
-      // Add any options you may need, e.g., { useNewUrlParser: true }
-    });
+    await mongoose.connect(MONGO_URL);
 
     mongoose.connection.on('connected', () => {
       isConnected = true;
